@@ -1,0 +1,114 @@
+[
+  {
+    "id": "player_001",
+    "name": "Thorne",
+    "class": "Warrior",
+    "level": 12,
+    "inventory": [
+      {
+        "itemId": "iron_sword",
+        "name": "Iron Sword",
+        "quantity": 1,
+        "modifiers": [
+          {
+            "type": "attack",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "itemId": "health_potion",
+        "name": "Health Potion",
+        "quantity": 3
+      }
+    ],
+    "skills": [
+      {
+        "name": "Shield Bash",
+        "level": 2,
+        "cooldown": 8
+      },
+      {
+        "name": "Taunt",
+        "level": 1,
+        "cooldown": 5
+      }
+    ]
+  },
+  {
+    "id": "player_002",
+    "name": "Lyra",
+    "class": "Archer",
+    "level": 10,
+    "inventory": [
+      {
+        "itemId": "longbow",
+        "name": "Longbow",
+        "quantity": 1,
+        "modifiers": [
+          {
+            "type": "range",
+            "value": 15
+          },
+          {
+            "type": "crit_chance",
+            "value": 0.1
+          }
+        ]
+      },
+      {
+        "itemId": "arrow_bundle",
+        "name": "Arrow Bundle",
+        "quantity": 50
+      }
+    ],
+    "skills": [
+      {
+        "name": "Multi-Shot",
+        "level": 3,
+        "cooldown": 12
+      },
+      {
+        "name": "Camouflage",
+        "level": 1,
+        "cooldown": 20
+      }
+    ]
+  },
+  {
+    "id": "player_001",
+    "name": "Arthas",
+    "class": "Warrior",
+    "level": 12,
+    "inventory": [
+      {
+        "itemId": "steel_sword",
+        "name": "Steel Sword",
+        "quantity": 1,
+        "modifiers": [
+          {
+            "type": "attack",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "itemId": "strength_potion",
+        "name": "Strength Potion",
+        "quantity": 3
+      }
+    ],
+    "skills": [
+      {
+        "name": "Shield Bash",
+        "level": 2,
+        "cooldown": 8
+      },
+      {
+        "name": "Taunt",
+        "level": 1,
+        "cooldown": 5
+      }
+    ]
+  }
+]
