@@ -1,114 +1,59 @@
-[
-  {
-    "id": "player_001",
-    "name": "Thorne",
-    "class": "Warrior",
-    "level": 12,
-    "inventory": [
-      {
-        "itemId": "iron_sword",
-        "name": "Iron Sword",
-        "quantity": 1,
-        "modifiers": [
-          {
-            "type": "attack",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "itemId": "health_potion",
-        "name": "Health Potion",
-        "quantity": 3
-      }
-    ],
-    "skills": [
-      {
-        "name": "Shield Bash",
-        "level": 2,
-        "cooldown": 8
-      },
-      {
-        "name": "Taunt",
-        "level": 1,
-        "cooldown": 5
-      }
-    ]
+{
+  "firmness": {
+    "name": "soft",
+    "url": "https://pokeapi.co/api/v2/berry-firmness/2/"
   },
-  {
-    "id": "player_002",
-    "name": "Lyra",
-    "class": "Archer",
-    "level": 10,
-    "inventory": [
-      {
-        "itemId": "longbow",
-        "name": "Longbow",
-        "quantity": 1,
-        "modifiers": [
-          {
-            "type": "range",
-            "value": 15
-          },
-          {
-            "type": "crit_chance",
-            "value": 0.1
-          }
-        ]
+  "flavors": [
+    {
+      "flavor": {
+        "name": "spicy",
+        "url": "https://pokeapi.co/api/v2/berry-flavor/1/"
       },
-      {
-        "itemId": "arrow_bundle",
-        "name": "Arrow Bundle",
-        "quantity": 50
-      }
-    ],
-    "skills": [
-      {
-        "name": "Multi-Shot",
-        "level": 3,
-        "cooldown": 12
+      "potency": 10
+    },
+    {
+      "flavor": {
+        "name": "dry",
+        "url": "https://pokeapi.co/api/v2/berry-flavor/2/"
       },
-      {
-        "name": "Camouflage",
-        "level": 1,
-        "cooldown": 20
-      }
-    ]
+      "potency": 0
+    },
+    {
+      "flavor": {
+        "name": "sweet",
+        "url": "https://pokeapi.co/api/v2/berry-flavor/3/"
+      },
+      "potency": 0
+    },
+    {
+      "flavor": {
+        "name": "bitter",
+        "url": "https://pokeapi.co/api/v2/berry-flavor/4/"
+      },
+      "potency": 0
+    },
+    {
+      "flavor": {
+        "name": "sour",
+        "url": "https://pokeapi.co/api/v2/berry-flavor/5/"
+      },
+      "potency": 0
+    }
+  ],
+  "growth_time": 3,
+  "id": 1,
+  "item": {
+    "name": "cheri-berry",
+    "url": "https://pokeapi.co/api/v2/item/126/"
   },
-  {
-    "id": "player_001",
-    "name": "Arthas",
-    "class": "Warrior",
-    "level": 12,
-    "inventory": [
-      {
-        "itemId": "steel_sword",
-        "name": "Steel Sword",
-        "quantity": 1,
-        "modifiers": [
-          {
-            "type": "attack",
-            "value": 5
-          }
-        ]
-      },
-      {
-        "itemId": "strength_potion",
-        "name": "Strength Potion",
-        "quantity": 3
-      }
-    ],
-    "skills": [
-      {
-        "name": "Shield Bash",
-        "level": 2,
-        "cooldown": 8
-      },
-      {
-        "name": "Taunt",
-        "level": 1,
-        "cooldown": 5
-      }
-    ]
-  }
-]
+  "max_harvest": 5,
+  "name": "cheri",
+  "natural_gift_power": 60,
+  "natural_gift_type": {
+    "name": "fire",
+    "url": "https://pokeapi.co/api/v2/type/10/"
+  },
+  "size": 20,
+  "smoothness": 25,
+  "soil_dryness": 15
+}
