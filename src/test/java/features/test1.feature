@@ -1,11 +1,12 @@
 Feature: Test1
 
-  Scenario Outline: Verify greeting message
-    Given user name is "<text>"
-    When system generates greeting <number>
-    Then message should be
+  Scenario Outline: API test
+    Given return object with id "<id>"
+    Then expect object name to be "<name>"
+
 
   Examples:
-    | text | number |
-    | aa   | 1      |
-    | b    | 2      |
+    | id   | name      |
+    | 6    | charizard |
+    | 9    | blastoise |
+    | 63   | abra      |

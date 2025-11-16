@@ -1,22 +1,28 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.*;
+import pojo.Pokemon;
+import resources.Utils;
 
-public class StepDefinitions {
+import java.io.IOException;
 
+import static io.restassured.RestAssured.given;
+import static org.junit.Assert.assertEquals;
 
-    @Given("user name is {string}")
-    public void user_name_is(String string) {
-        System.out.println(string);
+public class StepDefinitions extends Utils {
+
+    Pokemon pokemon;
+
+    @Given("return object with id {string}")
+    public void return_object_with_id(String id) throws IOException {
+
+        pokemon = given().spec(requestSpec(id)).when().get().then().extract().body().as(Pokemon.class);
+
     }
 
-    @When("system generates greeting {int}")
-    public void system_generates_greeting(int number) {
-        System.out.println(number+22);
-    }
+    @Then("expect object name to be {string}")
+    public void expect_object_name_to_be(String name) {
 
-    @Then("message should be")
-    public void message_should_be() {
-        System.out.println(1);
+        assertEquals(pokemon.getName(), name);
     }
 }
