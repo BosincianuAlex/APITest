@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.nio.file.*;
 import java.util.List;
 
-public class Utils  {
+public class file {
 
     @Test(dataProvider = "testData")
     static void func(Object a){

@@ -1,7 +1,7 @@
 Feature: Test1
 
   Scenario Outline: API test
-    Given return object with id "<id>"
+    Given return "pokemon" with id "<id>"
     Then expect object name to be "<name>"
 
 
