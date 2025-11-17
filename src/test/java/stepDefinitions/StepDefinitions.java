@@ -14,6 +14,7 @@ public class StepDefinitions extends Utils {
 
     Pokemon pokemonObj;
 
+
     @Given("return {string} with id {string}")
     public void return_object_with_id(String pokemon, String id) throws IOException {
 
@@ -26,5 +27,16 @@ public class StepDefinitions extends Utils {
     public void expect_object_name_to_be(String name) {
         System.out.println(pokemonObj.getName());
         assertEquals(pokemonObj.getName(), name);
+    }
+
+    @Given("step one")
+    public void step_one() {
+        System.out.println("string");
+
+    }
+
+    @Then("step two")
+    public void step_two() {
+        System.out.println("string");
     }
 }
