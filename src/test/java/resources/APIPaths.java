@@ -1,13 +1,13 @@
 package resources;
 
-public enum APIResources {
+public enum APIPaths {
 
     pokemon("/pokemon/"),
     berry("/berry/");
 
     private final String resource;
 
-    private APIResources(String resource) {
+    private APIPaths(String resource) {
         this.resource = resource;
     }
 

@@ -1,9 +1,9 @@
 Feature: Test1
 API tests
 
-Scenario Outline: API test 1
-  Given return "pokemon" with id "<id>"
-  Then expect object name to be "<name>"
+Scenario Outline: GET API test
+  Given "pokemon" endpoint with id "<id>"
+  Then expect response object name to be "<name>"
 
   Examples:
     | id | name      |
@@ -11,10 +11,13 @@ Scenario Outline: API test 1
     | 9  | blastoise |
 
 
-  Scenario: API test2
-    Given step one
-    Then step two
+Scenario Outline: Post API test
+  Given step one
+  Then step two
 
+  Examples:
+    | id | name      |
+    | 6  | charizard |
 
 
 

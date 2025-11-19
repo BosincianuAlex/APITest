@@ -1,8 +1,10 @@
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import pojo.Pokemon;
+import pojo.Stats;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
