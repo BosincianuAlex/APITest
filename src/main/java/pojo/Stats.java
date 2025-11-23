@@ -8,6 +8,15 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Stats {
 
+    public Stats(){
+    }
+
+    public Stats(String baseStat, String name, String url){
+        this.baseStat=baseStat;
+        this.stat = new Stat(name, url);
+
+    }
+
     @JsonProperty("base_stat")
     String baseStat;
 
@@ -21,6 +30,15 @@ public class Stats {
 
 
     public static class Stat{
+
+        public Stat(){
+
+        }
+
+        public Stat(String name, String url){
+            this.name=name;
+            this.url=url;
+        }
 
         String name;
 

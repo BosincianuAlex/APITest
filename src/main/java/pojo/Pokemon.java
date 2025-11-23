@@ -2,6 +2,7 @@ package pojo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -10,7 +11,14 @@ public class Pokemon {
     List<Stats> stats;
 
     public List<Stats> getStats() { return stats; }
-    public void setStats(List<Stats> stats) { this.stats = stats; }
+    public void setStats(List<Stats> stats) {this.stats = stats; }
+
+    public void setStats(String a, String b, String c) {
+
+        Stats obj =new Stats(a,b,c);
+        this.stats = new ArrayList<>();
+        this.stats.add(obj);
+    }
 
     List<Moves> move;
 
