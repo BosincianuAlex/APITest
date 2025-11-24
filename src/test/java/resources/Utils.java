@@ -20,22 +20,6 @@ public class Utils {
     }
 
 
-    public List<Stats> payload(){
-        Stats.Stat obj2;
-        obj2 = new Stat();
-        obj2.setName("alcohol resistance");
-        obj2.setUrl("url");
-
-        Stats obj1 = new Stats();
-        obj1.setBaseStat("9000");
-        obj1.setStat(obj2);
-
-        List<Stats> a = new ArrayList<>();
-        a.add(obj1);
-        return a;
-    }
-
-
     public static String getGlobalValue(String key) throws IOException {
         Properties prop = new Properties();
         FileInputStream fis = new FileInputStream("src/test/java/resources/global.properties");

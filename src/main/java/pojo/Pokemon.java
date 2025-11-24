@@ -13,9 +13,9 @@ public class Pokemon {
     public List<Stats> getStats() { return stats; }
     public void setStats(List<Stats> stats) {this.stats = stats; }
 
-    public void setStats(String a, String b, String c) {
+    public void setStats(String baseStat, String name, String url) {
 
-        Stats obj =new Stats(a,b,c);
+        Stats obj =new Stats(baseStat, name, url);
         this.stats = new ArrayList<>();
         this.stats.add(obj);
     }
