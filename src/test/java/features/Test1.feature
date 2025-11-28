@@ -21,6 +21,9 @@ Scenario Outline: Post API test
     | poke1 | 60       | HP       | urlTxt |
     | poke2 | 45       | Attack   | urlTxt |
 
+Scenario: Query test
+  When User sends a query for 20 items on "pokemon" resource
+
 
 
 

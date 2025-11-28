@@ -19,6 +19,11 @@ public class Utils {
         return new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl")+path+resource).setContentType(ContentType.JSON).build();
     }
 
+    public RequestSpecification requestSpec(String path) throws IOException {
+
+        return new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl")+path).setContentType(ContentType.JSON).build();
+    }
+
 
     public static String getGlobalValue(String key) throws IOException {
         Properties prop = new Properties();

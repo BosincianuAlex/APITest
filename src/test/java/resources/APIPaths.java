@@ -15,5 +15,8 @@ public enum APIPaths {
         return this.resource;
     }
 
+    public String getQueryPath(){
+        return this.resource + "?limit=20" ;
+    }
 
 }
